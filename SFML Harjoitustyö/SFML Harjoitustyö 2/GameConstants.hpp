@@ -20,8 +20,8 @@ public:
     static const int iScreenWidth = 800;
     static const int iScreenHeight = 800;
 
-    static const int levelWidth = 16;
-    static const int levelHeight = 16;
+    static const int levelWidth = 32;
+    static const int levelHeight = 32;
 
     static const enum LevelSpace
     {

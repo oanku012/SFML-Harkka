@@ -19,14 +19,6 @@ private:
     //Player* pPlayer;
     Game* pGame;
 
-    // Try to do a boolean system for controls
-    bool bPlayerMoveUp = false;
-    bool bPlayerMoveDown = false;
-    bool bPlayerMoveLeft = false;
-    bool bPlayerMoveRight = false;
-
-    // What about player two???
-    //bool bPlayerTwoMoveUp = false;
 };
 
 #endif /* InputHandler_hpp */

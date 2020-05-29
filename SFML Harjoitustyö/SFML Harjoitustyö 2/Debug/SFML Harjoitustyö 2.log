@@ -1,4 +1,23 @@
-﻿  InputHandler.cpp
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(467,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (SFML Harjoitustyö 2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Game.cpp
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(29): warning C4091: 'static ': ignored on left of 'const GameConstants::LevelSpace' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(33): warning C4091: 'static ': ignored on left of 'const GameConstants::PlayerDirection' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\Game.cpp(279,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  GameConstants.cpp
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(29): warning C4091: 'static ': ignored on left of 'const GameConstants::LevelSpace' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(33): warning C4091: 'static ': ignored on left of 'const GameConstants::PlayerDirection' when no variable is declared
+  InputHandler.cpp
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(29): warning C4091: 'static ': ignored on left of 'const GameConstants::LevelSpace' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(33): warning C4091: 'static ': ignored on left of 'const GameConstants::PlayerDirection' when no variable is declared
   main.cpp
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(29): warning C4091: 'static ': ignored on left of 'const GameConstants::LevelSpace' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(33): warning C4091: 'static ': ignored on left of 'const GameConstants::PlayerDirection' when no variable is declared
+  renderer.cpp
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(29): warning C4091: 'static ': ignored on left of 'const GameConstants::LevelSpace' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\GameConstants.hpp(33): warning C4091: 'static ': ignored on left of 'const GameConstants::PlayerDirection' when no variable is declared
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\renderer.cpp(46,96): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\renderer.cpp(46,33): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\renderer.cpp(57,88): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\SFML Harjoitustyö 2\renderer.cpp(57,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Generating Code...
-  SFML Harjoitustyö 2.vcxproj -> C:\Users\Anton\source\repos\SFML Harjoitustyö\Debug\SFML Harjoitustyö 2.exe
+  SFML Harjoitustyö 2.vcxproj -> D:\Anton Library\Documents\GitHub\SFML-Harkka\SFML Harjoitustyö\Debug\7.exe

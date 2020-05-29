@@ -17,34 +17,19 @@ public:
     renderer(sf::RenderWindow* pw, Game* pg);
     
     // This method does all the magic!!!
-    void render(sf::Time delta);
+    void renderGame();
+    void renderGameOver();
     
 private:
     // We need a member variable where we render everything
     sf::RenderWindow* pWindow;
-    //Game* pGame;
+    Game* pGame;
     
-    int counter;    
-    sf::CircleShape circle;
-    std::vector<sf::CircleShape> vec_circles;
+    sf::RectangleShape background;
     
-    sf::RectangleShape rect;
-    
-    // For drawing some text
-    sf::Font font;
-    sf::Text text;
-    sf::Text debug;
-    
-    sf::Texture texture;
-    sf::Sprite sprite;
-
-    sf::Texture tx_player;
-    sf::Sprite sp_player;
-    
-    
-    sf::Texture mytexture;
-    
+    sf::Text gameOverText;
   
+    sf::Font drive;
 
 };
 

@@ -7,19 +7,25 @@
 #include <SFML/Graphics.hpp>
 #include <cstdlib> 
 #include <ctime>
+#include <iostream>
+#include <list>
 #include "GameConstants.hpp"
 
 class Game {
 
 public:
 	Game();
-	void Update(sf::Time delta);
+	void Update();
 	void PlaceFood();
-	void ExtendSnake();
+	//void GameOver();
+	void StartNewGame();
+	//void ExtendSnake();
 
 	GameConstants::LevelSpace gameArea[GameConstants::levelWidth][GameConstants::levelHeight];
 
-	int playerSize;
+	int playerScore;
+
+	int playerStartingSize;
 
 	int startingPosX, startingPosY;
 
@@ -28,8 +34,13 @@ public:
 	int snakeHeadPosX, snakeHeadPosY;
 	int snakeTailPosX, snakeTailPosY;
 	
-	//Add a dictionary here to keep track of snake positions?
-	std::map<int, int, int> snakeParts;
+	//Keeps track of snake parts so the tail can be removed on each frame
+	std::map<int, std::pair<int, int>> snakeParts;
+
+	//std::list<std::pair<int, int>> snakeParts;
+	//std::pair<int, int> snakeParts;
+
+	bool foodEaten, gameOver;
 };
 
 

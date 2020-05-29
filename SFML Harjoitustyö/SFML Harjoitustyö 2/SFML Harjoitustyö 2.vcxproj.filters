@@ -48,4 +48,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="Assets\MISTRAL.TTF">
+      <Filter>Assets</Filter>
+    </Font>
+  </ItemGroup>
 </Project>

@@ -25,7 +25,7 @@
 // Include the renderer-class!
 #include "Renderer.hpp"
 // Include the input handler!
-//#include "InputHandler.hpp"
+#include "InputHandler.hpp"
 
 #include "GameConstants.hpp"
 
@@ -50,9 +50,7 @@ int main(int, char const**)
     sf::RenderWindow window(sf::VideoMode(GameConstants::iScreenWidth,
         GameConstants::iScreenHeight), "SFML window");
 
-    // For measuring time and doing a bit more accurate physics etc.
-    sf::Clock clock;
-    sf::Time deltatime;
+   
 
     // Don't repeat the keys...
     window.setKeyRepeatEnabled(false);
@@ -60,7 +58,7 @@ int main(int, char const**)
     //window.setKeyRepeatEnabled(true);
 
     // Limit the frame rate
-    window.setFramerateLimit(3);
+    window.setFramerateLimit(10);
 
     // Create the game-object
     Game myGame;
@@ -69,12 +67,12 @@ int main(int, char const**)
     renderer* pMyRenderer = new renderer(&window, &myGame);
 
     // Create the input handler
-    //InputHandler myInputHandler(&window, &myGame);*/
+    InputHandler myInputHandler(&window, &myGame);
 
     // Joysticks?
-    for (int i = 0; i < 8; i++)
+    /*for (int i = 0; i < 8; i++)
         std::cout << std::boolalpha << "Joystick " << i << " : "
-        << sf::Joystick::isConnected(i) << std::endl;
+        << sf::Joystick::isConnected(i) << std::endl;*/
 
     // Get rid of the annoying repeating log message...
     sf::err().rdbuf(NULL);
@@ -83,18 +81,24 @@ int main(int, char const**)
     while (window.isOpen()) {
         // Game loop actions here:
         // Handle inputs
-        //myInputHandler.processEvents();
+        myInputHandler.processEvents();
 
         // Measure time
-        deltatime = clock.restart();
+       
         //std::cout << "Delta time: " << deltatime.asMicroseconds() << std::endl;
 
-        // Update game state
-        //myGame.update(deltatime);
+        if (myGame.gameOver == false) {
+            // Update game state
+            myGame.Update();
 
 
-        // Render the game screen
-        pMyRenderer->render(deltatime);
+            // Render the game screen
+            pMyRenderer->renderGame();
+
+        }
+        else {
+            pMyRenderer->renderGameOver();
+        }
 
         // Sleep.... this saves the CPU from burning.
         //sf::Time sleeptime = sf::microseconds(16000-deltatime.asMicroseconds());
@@ -102,7 +106,7 @@ int main(int, char const**)
     }
 
     // Release the memory
-   // delete(pMyRenderer);
+    delete(pMyRenderer);
 
     return EXIT_SUCCESS;
 }
